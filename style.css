@@ -1,15 +1,19 @@
 /* RESET */
-body {
+/* body {
   background-image: url("./img/back.png");
   background-position: bottom;
+} */
+
+body {
+  background: rgb(243, 217, 243);
 }
 
 /* Menu */
 .menu {
   position: absolute;
   width: 60px;
-  top: 10%;
-  left: 15%;
+  top: 40%;
+  left: 50%;
   font-size: 60px;
   font-family: sans-serif;
   cursor: grabbing;
@@ -67,9 +71,10 @@ body {
 /* Hidden navbar */
 .navbar {
   position: absolute;
-  top: 16%;
-  left: 12.5%;
-  font-size: 22px;
+  top: 44%;
+  left: 48%;
+  margin-top: 8px;
+  font-size: 18px;
   transition: transform 450ms ease;
   opacity: 0;
 }
