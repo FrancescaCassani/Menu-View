@@ -1,0 +1,63 @@
+/* RESET */
+body {
+  background-image: url("./img/back.png");
+  background-position: bottom;
+}
+
+.menu {
+  position: absolute;
+  width: 60px;
+  top: 10%;
+  left: 15%;
+  font-size: 60px;
+  font-family: sans-serif;
+  cursor: grabbing;
+}
+
+.menu::before,
+.menu::after {
+  position: absolute;
+  transition: 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu:before {
+  content: "M \00a0 \00a0 \00a0 \00a0 \00a0 U";
+  top: -60px;
+  left: -80%;
+  width: 255px;
+  color: #59c0a2;
+}
+
+.menu:after {
+  content: "N";
+  top: 50px;
+  left: 96%;
+  color: #ff76be;
+}
+
+.menu:hover::before,
+.menu:hover::after {
+  top: -4px;
+  opacity: 1;
+  transition: 0.2s ease, opacity 0.5s 0.03s ease-in;
+}
+
+.bar {
+  margin: 0 auto 12px;
+  transition: transform 0.6s ease-in-out;
+  width: 68%;
+  height: 6px;
+  border-radius: 25px;
+  background: #ffc30c;
+}
+
+.bar:first-child,
+.bar:last-child {
+  background: #59c0a2;
+}
+
+.menu:hover .bar {
+ transform: rotate(360deg);
+}
